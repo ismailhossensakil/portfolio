@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@font-face {
+font-family: "impact";
+src: url("fonds/impact.eot");
+src: url("fonds/impact.otf");
+src: url("fonds/impact.ttf");
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.heading span{
+	font-family: "impact";
+}
+
+  header .row{
+  min-height: 100vh;
+ }
+
+.navbar{
+	padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600:;
+    background-color: rgba(64, 175, 204, 0.0);
+    position: relative;
+    padding: 27px 19px;
+    transition-duration: 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+background-color: rgba(64, 175, 204, 0.25);
+color: #fff;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link::after {
+	content:"";
+	width: 100%;
+	height: 0px;
+	background: #66baba;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition-duration: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after{
+height: 10px;
+}
+
+
+.banner-content{
+	color: #fff;
+	text-align: center;
+}
+
+
+.banner-content span{
+
+font-size: 30px;
+
+font-weight: 800;
+}
+
+.banner-content h1{
+	
+font-size: 48px;
+	
+font-weight: 700;
+	
+color: #66bfd6;
+}
+
+
+.banner-content p {
+    font-size: 20px;
+    font-weight: 100;
+    padding top: 106px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btn-custom{
+    font-size: 18px;
+    color: #fff !important;
+    background-color: #66bfd6;
+    border-radius: 0;
+    padding: 12px 25px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid #66bfd6;
+    transition:all 0.5s;
+        font-weight: 700;
+}
+
+.btn-custom-reverse{
+	    font-size: 18px;
+    color: #fff !important;
+    border-radius: 0;
+    padding: 12px 25px;
+    border: 2px solid #66bfd6;
+    transition:all 0.5s;
+        font-weight: 700;
+}
+
+.btn-custom-reverse{
+	background-color: transparent;
+	border-bottom-right-radius: 30px;
+}
+
+.btn-custom:hover{
+	background-color: transparent;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 0px;
+}
+.btn-custom-reverse:hover{
+	background-color: #66bfd6;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 0px;
+
+}
+
+.social-link{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.social-link li{
+    margin-bottom: 8px;
+}
+.social-link li a{
+    color: #929292;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+.social-link li span{
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	transform: rotate(-90deg) translate(-50px, -25px);
+	-webkit-transform: rotate(-90deg) translate(-50px, -25px);
+	-moz-transform: rotate(-90deg) translate(-50px, -25px);
+}
+
+.aboutme-section{
+    margin-top: 100px;
+}
+.aboutme-section .row{}
+.aboutme-section img{
+	max-width: 50%;
+	float: left;
+	padding-right: 25px;
+}
+.aboutme-content{
+	max-width: 50%;
+	float: left;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 70px;
+    position: relative;
+    color: #66bfd6;
+    font-weight: 900;
+    padding-top: 35px;
+    padding-bottom: 56px;
+}
+.heading span{
+	font-size: 120px;
+	color: #f7f7f7;
+	position: absolute;
+	left: 0;bottom: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.aboutme-content p{
+    text-align: center;
+    color: #242424;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.skill-section{
+	    margin-top: 80px;
+}
+
+
+ h4{
+    font-size: 30px;
+    text-align: center;
+    color: #66bfd6;
+    font-weight: 900;
+    padding: 60px 0 15px;
+}
+.hvr{position: relative;}
+.hvr a{
+	position: absolute;
+	left: 0;
+	color: aliceblue;
+	text-align: center;
+	display: block;
+	width: 100%;
+	top: 60%;
+	transform: translateY(-60%);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 20px;
+	z-index: 1;
+	transition:all 0.7s;
+	opacity: 0;
+	}
+
+
+
+.hvr:hover a{
+	opacity: 1;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+
+.hvr::after{
+	content:"";
+	background-color: #1d272ab0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	transform: scale(0.8);
+	transition:all 0.7s;
+	opacity: 0;
+}
+
+
+.hvr:hover::after{
+	transform: scale(0.1);
+	opacity: 1;
+}
+
+
+.resume-section{
+    padding: 70px 0;
+}
+
+h5{
+    font-size: 22px;
+    color: #aaa;
+    margin: 50px 0 20px;
+}
+
+.resume-box{
+    position: relative;
+    padding: 0 40px 30px;
+}
+.resume-box::after{
+	content: "";
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	left: 9px;
+	top: 0;
+	background-color: #66bfd6;
+}
+.resume-box:hover::after {}
+.resume-box::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #66bfd6;
+	position: absolute;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	border: 3px solid #66bfd6;
+	z-index: 1;
+	transition: all 0.4s;
+}
+.resume-box:hover::before {
+    background: #fff;
+    box-shadow: 0 0 7px #66bfd6;
+}
+
+.resume-box .resume{
+    transition: all 0.4s;
+    padding: 10px 0px;
+}
+.resume-box:hover .resume{
+    background-image: url(../images/education_img.png);
+    box-shadow: 0 2px 5px #66bfd6;
+    padding: 10px 25px;
+}
+.resume-box .resume span{
+    font-size: 22px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-bottom-right-radius: 25px;
+    display: inline-block;
+}
+.resume-box:hover .resume span{
+    color: #66bfd6;
+}
+.resume-box .resume h3{
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: 800;
+}
+.resume-box:hover .resume h3{
+    color: #66bfd6;
+}
+.resume-box .resume h6{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.resume-box .resume p{
+	    margin-bottom: 0;
+	    padding-top: 18px;
+}
+
+.work-section{
+padding-bottom: 100px;
+}
+
+.work-list{
+padding-bottom: 20px;
+padding-top: 50px;
+}
+.work-list li .btn{
+	    font-size: 22px;
+	    color: #242424;
+	    border-radius: 0;
+	    padding: 5px 25px;
+	    transition: all 0.5s;
+}
+.work-list li .btn:hover{
+	
+color: #66bfd6;
+	
+border: 2px solid #66bfd6;
+	
+border-bottom-right-radius: 35px;
+}
+
+.question-section{
+
+}
+.question-section .container{
+	background: url(../images/question.png);
+	background-repeat: no-repeat;
+	padding: 45px;
+}
+
+.question-section h2{
+
+font-size: 50px;
+
+font-weight: 100;
+
+color: white;
+}
+.question-section h1{font-size: 50px;
+	font-weight: 600;
+	color: white;
+}
+.question-section .btn{
+
+background-color: white;
+
+color: #40afcc;
+
+text-transform: capitalize;
+
+border-radius: 0;
+
+padding: 16px 65px;
+
+border-bottom-right-radius: 34px;
+
+font-size: 24px;
+
+font-weight: 800;
+
+float: right;
+}
+
+
+
+.getin-section{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.getin-section .btn-custom{
+    background-color: #66bfd6;
+    /* color: black; */
+    font-size: 22px;
+}
+}
+.getin-section .btn-custom:hover{
+border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.social-section{margin-top: 100px;}
+.social-section a{
+	padding: 18px;
+	display: block;
+	color: #66bfd6;
+	background-color: #f1fcff;
+	border-bottom-right-radius: 62px;
+	transition: all 0.8s;
+}
+.social-section a:hover{
+	
+text-decoration: none;
+	
+color: #f1fcff;
+	
+background-color: #66bfd6;
+}
+.social-section a ul{
+    align-items: center;
+    justify-content: center;
+}
+.social-section a ul li{
+    padding: 0 12px;
+}
+.social-section a ul li i{
+    font-size: 85px;
+}
+
+.social-section a ul span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer{
+    padding: 26px;
+    background-color: #40afcc;
+    margin-top: 60px;
+}
+.footer .container{
+
+}
+.footer ul{}
+.footer ul li{
+    color: #f1fcff;
+    font-size: 24px;
+}
+
+
+.navbar-toggler span{}
+.navbar-light .navbar-toggler {
+    color: rgb(102, 191, 214);
+    border-color: rgb(102, 191, 214);
+    border-radius: 0;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-toggler:hover{
+	    color: #fff;
+    border-color: rgb(255, 255, 255);
+        background-color: #66bfd6;
+}
